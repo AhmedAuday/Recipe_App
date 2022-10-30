@@ -16,23 +16,43 @@ class Recipe {
 
 List<Recipe> recipes = [
   Recipe(
-      imgUrl: "${assetsImg}Chicken.jpeg",
+      imgUrl: "${assetsImg}Ch.png",
       lable: "Chiken",
-      ingrident: [Ingridents(mesurment: "box", name: 'Chicken', qty: 1)],
-      serving: 4),
+      ingrident: [
+        Ingridents(
+            mesurment: "Chicken, vinegar, garlic, sea salt, lime zest",
+            name: ' Rosted Chicken',
+            quantity: 1)
+      ],
+      serving: 2),
   Recipe(
       imgUrl: "${assetsImg}Dolma.png",
       lable: "Dolma",
-      ingrident: [Ingridents(mesurment: "box", name: 'dolma', qty: 1)],
+      ingrident: [
+        Ingridents(
+            mesurment: "Grape leaves , Onion , Rice",
+            name: 'Dolma',
+            quantity: 1)
+      ],
       serving: 3),
   Recipe(
-      imgUrl: "${assetsImg}La.png",
-      lable: "LAzania",
-      ingrident: [Ingridents(mesurment: "box", name: 'LAzania', qty: 1)],
+      imgUrl: "${assetsImg}la.png",
+      lable: "LaZania",
+      ingrident: [
+        Ingridents(
+            mesurment: "Meat , Onion and garlic , Tomato products , Cheeses",
+            name: 'LaZania',
+            quantity: 1)
+      ],
       serving: 1),
   Recipe(
-      imgUrl: "${assetsImg}sandwich.jpg",
-      lable: "Sandwitch",
-      ingrident: [Ingridents(mesurment: "box", name: 'Sandwitch', qty: 1)],
-      serving: 3),
+      imgUrl: "${assetsImg}Me.png",
+      lable: "Grilld Meat",
+      ingrident: [
+        Ingridents(
+            mesurment: "Meat , Barbecue Sauce",
+            name: 'Grilld Meat',
+            quantity: 1)
+      ],
+      serving: 1),
 ];

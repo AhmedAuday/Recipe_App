@@ -35,7 +35,7 @@ class _RecipeScreenState extends State<RecipeScreen> {
                     final ing = recipe.ingrident[index];
                     return Text('${ing.mesurment} '
                         '${ing.name}'
-                        '${ing.qty * _sliderValue}');
+                        '${ing.quantity * _sliderValue}');
                   })),
           Slider(
               value: _sliderValue,

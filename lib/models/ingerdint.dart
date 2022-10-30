@@ -1,11 +1,11 @@
 class Ingridents {
-  double qty;
+  double quantity;
   String mesurment;
   String name;
 
   Ingridents({
     required this.mesurment,
     required this.name,
-    required this.qty,
+    required this.quantity,
   });
 }

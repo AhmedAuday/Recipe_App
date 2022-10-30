@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
           itemCount: recipes.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            childAspectRatio: 1.4,
+            childAspectRatio: 1.5,
             crossAxisSpacing: 40,
             mainAxisSpacing: 100,
           ),

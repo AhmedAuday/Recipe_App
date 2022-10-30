@@ -1,4 +1,4 @@
-#Sun Oct 30 12:41:31 AST 2022
-base.0=/Users/ahmedauday/StudioProjects/recipe_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sun Oct 30 20:47:06 AST 2022
+base.0=/Users/ahmedauday/Documents/GitHub/Recipe_App/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

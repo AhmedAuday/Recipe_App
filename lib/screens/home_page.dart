@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_app/constant.dart';
 import 'package:recipe_app/models/recipe.dart';
 
 import 'package:recipe_app/widget/custom_stack.dart';
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: primeColor,
         elevation: 10,
         title: const Text(
           "Recipe App",

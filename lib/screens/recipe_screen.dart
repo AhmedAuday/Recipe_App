@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_app/models/recipe.dart';
 
+import '../constant.dart';
+
 class RecipeScreen extends StatefulWidget {
   const RecipeScreen({
     super.key,
@@ -20,7 +22,7 @@ class _RecipeScreenState extends State<RecipeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(recipe.lable),
-        backgroundColor: Colors.amber,
+        backgroundColor: primeColor,
       ),
       body: Column(
         children: [

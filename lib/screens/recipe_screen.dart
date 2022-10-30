@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/models/recipe_class.dart';
+import 'package:recipe_app/models/recipe.dart';
 
 class RecipeScreen extends StatefulWidget {
   const RecipeScreen({
@@ -12,7 +12,7 @@ class RecipeScreen extends StatefulWidget {
 }
 
 class _RecipeScreenState extends State<RecipeScreen> {
-  double _sliderValue = 0;
+  int _sliderValue = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -29,25 +29,30 @@ class _RecipeScreenState extends State<RecipeScreen> {
           ),
           Expanded(
               child: ListView.builder(
-                  padding: const EdgeInsets.all(7.0),
+                  padding: const EdgeInsets.only(left: 30),
                   itemCount: recipe.ingrident.length,
                   itemBuilder: (context, index) {
                     final ing = recipe.ingrident[index];
-                    return Text('${ing.mesurment} '
-                        '${ing.name}'
-                        '${ing.quantity * _sliderValue}');
+                    return Text(
+                      '${ing.name} \n${ing.quantity.toInt() * _sliderValue.toInt()} ${ing.mesurment} ',
+                      style: TextStyle(fontSize: 30),
+                    );
                   })),
-          Slider(
-              value: _sliderValue,
-              label: '$_sliderValue People servings',
-              max: 10,
-              min: 0,
-              divisions: 10,
-              onChanged: (value) {
-                setState(() {
-                  _sliderValue = value;
-                });
-              })
+          SizedBox(
+            height: 190,
+            width: 300,
+            child: Slider(
+                value: _sliderValue.toDouble(),
+                label: '${_sliderValue.toInt()} People servings',
+                max: 10,
+                min: 1,
+                divisions: 10,
+                onChanged: (value) {
+                  setState(() {
+                    _sliderValue = value.round();
+                  });
+                }),
+          ),
         ],
       ),
     );

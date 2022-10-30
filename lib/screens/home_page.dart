@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/models/recipe_class.dart';
+import 'package:recipe_app/models/recipe.dart';
 
 import 'package:recipe_app/widget/custom_stack.dart';
 

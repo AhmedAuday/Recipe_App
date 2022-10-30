@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:recipe_app/screens/recipe_screen.dart';
 
-import '../models/recipe_class.dart';
+import '../models/recipe.dart';
 
 // ignore: must_be_immutable
 class CustomCard extends StatelessWidget {

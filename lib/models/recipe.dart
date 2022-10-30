@@ -17,11 +17,11 @@ class Recipe {
 List<Recipe> recipes = [
   Recipe(
       imgUrl: "${assetsImg}Ch.png",
-      lable: "Chiken",
+      lable: "Chicken",
       ingrident: [
         Ingridents(
-            mesurment: "Chicken, vinegar, garlic, sea salt, lime zest",
-            name: ' Rosted Chicken',
+            mesurment: "Chicken\nvinegar\ngarlic\nsea salt\nlime zest",
+            name: 'Rosted Chicken',
             quantity: 1)
       ],
       serving: 2),
@@ -30,9 +30,7 @@ List<Recipe> recipes = [
       lable: "Dolma",
       ingrident: [
         Ingridents(
-            mesurment: "Grape leaves , Onion , Rice",
-            name: 'Dolma',
-            quantity: 1)
+            mesurment: "Grape leaves\nOnion\nRice", name: 'Dolma', quantity: 1)
       ],
       serving: 3),
   Recipe(
@@ -40,7 +38,7 @@ List<Recipe> recipes = [
       lable: "LaZania",
       ingrident: [
         Ingridents(
-            mesurment: "Meat , Onion and garlic , Tomato products , Cheeses",
+            mesurment: "Meat\nOnion and garlic\nTomato products\nCheeses",
             name: 'LaZania',
             quantity: 1)
       ],
@@ -50,9 +48,7 @@ List<Recipe> recipes = [
       lable: "Grilld Meat",
       ingrident: [
         Ingridents(
-            mesurment: "Meat , Barbecue Sauce",
-            name: 'Grilld Meat',
-            quantity: 1)
+            mesurment: "Meat\nBarbecue Sauce", name: 'Grilld Meat', quantity: 1)
       ],
       serving: 1),
 ];

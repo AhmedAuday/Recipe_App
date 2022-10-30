@@ -35,7 +35,7 @@ class _RecipeScreenState extends State<RecipeScreen> {
                     final ing = recipe.ingrident[index];
                     return Text(
                       '${ing.name} \n${ing.quantity.toInt() * _sliderValue.toInt()} ${ing.mesurment} ',
-                      style: TextStyle(fontSize: 30),
+                      style: const TextStyle(fontSize: 30),
                     );
                   })),
           SizedBox(

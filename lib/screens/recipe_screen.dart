@@ -7,6 +7,7 @@ class RecipeScreen extends StatefulWidget {
   const RecipeScreen({
     super.key,
   });
+
   static String id = "RecipeScreen";
 
   @override
